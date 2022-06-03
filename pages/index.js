@@ -377,6 +377,9 @@ export default function Home() {
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
           </div>
+          <div className={styles.description}>
+            Here is <Link href="/ico"><a style={{color: 'blue'}}>Initial coin offering for Crypto Devs Token.</a></Link>
+          </div>
           {renderButton()}
         </div>
         <div>
