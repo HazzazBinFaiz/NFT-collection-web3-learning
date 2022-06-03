@@ -1,5 +1,6 @@
 import { Contract, providers, utils } from "ethers";
 import Head from "next/head";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
@@ -369,6 +370,9 @@ export default function Home() {
           <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
+          </div>
+          <div className={styles.description}>
+            If you are not whitelisted yet, add your address to <Link href="/whitelist"><a style={{color: 'blue'}}>whitelist first.</a></Link>
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
